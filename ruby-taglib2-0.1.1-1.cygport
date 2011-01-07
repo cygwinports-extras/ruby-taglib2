@@ -1,0 +1,6 @@
+inherit ruby
+
+DESCRIPTION="Ruby TagLib bindings (with Ruby 1.9 support)"
+HOMEPAGE="http://zik.rubyforge.org/"
+SRC_URI="mirror://rubyforge/zik/${P}.tar.gz"
+SRC_DIR=${PN}

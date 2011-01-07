@@ -1,0 +1,7 @@
+category: Ruby
+requires: libtag_c0 ruby
+sdesc: "Ruby TagLib bindings"
+ldesc: "ruby-taglib2 is a Ruby interface to TagLib, the audio meta-data 
+library. It allows Ruby programs to read and write meta-data of all the 
+audio formats supported by TagLib. It was written because ruby-taglib 
+suffers severals bugs with ruby 1.9."
