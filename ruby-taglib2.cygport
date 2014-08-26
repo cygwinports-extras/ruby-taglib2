@@ -2,9 +2,21 @@ inherit rubygem
 
 NAME="ruby-taglib2"
 VERSION=0.1.5
-RELEASE=1
+RELEASE=2
 CATEGORY="Ruby"
 SUMMARY="Ruby TagLib bindings"
 DESCRIPTION="ruby-taglib2 is a Ruby interface to TagLib, the audio meta-data
 library. It allows Ruby programs to read and write meta-data of all the
 audio formats supported by TagLib."
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_taglib2_CONTENTS="--exclude=tests ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_taglib2_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+
+src_install() {
+	cd ${S}
+	rubygem_install
+
+	rm -f  ${D}${RUBYGEM_INSTDIR}/*.c
+	rm -fr ${D}${RUBYGEM_INSTDIR}/tests/
+}
