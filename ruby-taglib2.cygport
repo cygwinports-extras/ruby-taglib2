@@ -2,7 +2,7 @@ inherit rubygem
 
 NAME="ruby-taglib2"
 VERSION=0.1.5
-RELEASE=2
+RELEASE=3
 CATEGORY="Ruby"
 SUMMARY="Ruby TagLib bindings"
 DESCRIPTION="ruby-taglib2 is a Ruby interface to TagLib, the audio meta-data
